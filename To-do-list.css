@@ -17,7 +17,7 @@ body{
 .top-icon>button{
     border: none;
     background-color: rgb(245,245,245);
-    transform: scale(1.65);
+    transform: scale(1.5);
 }
 .top-icon {
     display: flex;  flex-flow: row nowrap;
@@ -55,9 +55,9 @@ p.intro{
 #add-job{
     border: 1px solid white;    border-radius: 50%;
     background-color: white;
-    position: fixed;
-    bottom: 1.81rem;       left: 47%;
-    width: 35px; height:35px;
+    position: absolute;
+    bottom: -2rem;       left: 47%;
+    width: 2.2rem; height:2.2rem;
     display: flex;  flex-flow: column nowrap;
     justify-content: center;    align-items: center; 
     cursor: pointer;
