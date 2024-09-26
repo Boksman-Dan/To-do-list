@@ -8,7 +8,7 @@ html{font-size: 16px;}
 body{
     margin: 0% 2%;     width: 100vw;  
     position: relative; top:0px ;  left: 0px;
-    background: linear-gradient(0deg, rgb(57, 56, 56), rgb(39, 35, 35), rgb(6, 6, 6))
+    background: linear-gradient(0deg, rgb(50, 50, 50), rgb(30, 30, 30), rgb(6, 6, 6))
 }
 .time-now, .date-now {
   font-size: 0.75rem;    cursor: pointer;
@@ -17,7 +17,7 @@ body{
 .top-icon>button{
     border: none;
     background-color: rgb(6, 6, 6);
-    transform: scale(1.65);
+    transform: scale(1.5);
 }
 .top-icon {
     display: flex;  flex-flow: row nowrap;
@@ -55,8 +55,8 @@ p.intro{
 #add-job{
     border: 1px solid rgb(70, 70, 70);    border-radius: 50%;
     background-color: rgb(70, 70, 70);
-    position: fixed;
-    bottom: 1.81rem;       left: 47%;
+    position: absolute;
+    bottom: -2rem;       left: 47%;
     width: 2.2rem; height:2.2rem;
     display: flex;  flex-flow: column nowrap;
     justify-content: center;    align-items: center; 
@@ -64,7 +64,7 @@ p.intro{
 }
 #add-job>p{
     font-size: 2.2rem;  color: var(--cornBlueDM);  font-weight: 900;
-    text-align: center;     margin-top: 7px;
+    text-align: center;     margin-top: .8rem;
     z-index: 2;
 }
 #close-job{
