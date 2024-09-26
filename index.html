@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Tasks, objectives, deadline, To-Do List" />
+    <meta name="description" content="To-Do List" />  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./To-do-list.css" id="stylesheet" >
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="top-icon">
+        <span class="time-now">12 : 00 PM</span>
+        <button>
+             <span class="time-now" id="DarkMode">🌙</span>
+             <span class="time-now" id="LightMode">🔆</span>
+        </button>
+        <span class="date-now">Today is: Monday</span>
+    </div>
+
+    <div class="PCcentre">
+        <main id="main-content">
+            <header class="topmost">
+                TO-DO LIST
+            </header>
+            <section>
+                <p id="v" class="intro">
+                    Having a track record of things you need to do, actions you need to undertake and assignments you need to complete is important for
+                    every individual especially in this our time of multiple engagements and appointments. One ought to have a note where 
+                    many of the actions he/she wishes to undertake are written down to enable one plan for the day or week. 
+                    <br> It will also help one set reasonable deadlines to complete missions and tasks hence keeping one proactive and conscious of his time schedule. 
+                </p><br>
+            </section>
+
+            <div id="bring-form" class="overlay hidden"> 
+                <div class="overlie-form hiden rel-postn">
+                    <div id="close-job">x</div>
+                    <form>
+                        <h2 style="color:cornflowerblue; text-align: center;">
+                            Add New Task
+                        </h2>
+                        <div class="mb-3">
+                            <label for="InputTitle1" class="form-label">Task Title</label>
+                            <input type="text" class="form-control" id="InputTitle1" aria-describedby="emailHelp" required>
+                        </div>                  
+                        <div class="mb-3">
+                            <label for="Message" class="form-label">
+                                Task Description 
+                            </label>
+                            <textarea id="Message" name="Message" rows="5" required class="form-control"></textarea>
+                        </div>
+                        <button id="addNewTask-done" type="button" class="btn btn-primary">Done</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <section id="to-do-tasks">
+                <h2 style="font-size: 2rem; font-family: cursive;">Uncompleted Tasks</h2>
+
+            </section>
+        </main>
+        <div id="add-job"><p>+</p></div>
+    </div>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="./To-do-list.js"></script>
+</body>
+</html>
